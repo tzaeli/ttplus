@@ -35,22 +35,52 @@ function toggle_dark_mode() {
 }
 
 /*
+    Timestamp Helpers
+
+    onAppend: general listener for changes to elements
+ */
+
+function onAppend(elem, f) {
+    let observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+            if (m.addedNodes.length) {
+                f(m.addedNodes)
+            }
+        })
+    })
+    observer.observe(elem, {childList: true})
+}
+
+/*
     Start TTPlus
 
     Currently only adds a Theme toggle to the toolbar
  */
 function init_ttplus() {
+
+    // init toolbar
     let toolbar = document.getElementsByClassName('header-buttons')[0];
+
+    // add theme toggle to toolbar
     let dark_mode_toggle = document.createElement('div');
     dark_mode_toggle.appendChild(document.createTextNode("Theme"));
-
     dark_mode_toggle.class = "ttplus theme-toggle";
     dark_mode_toggle.style = "color:#ffffff";
     dark_mode_toggle.onclick = function() {
         toggle_dark_mode();
     };
-
     toolbar.appendChild(dark_mode_toggle);
-
     window.dark_active = false;
+
+    // start message listener
+    onAppend(document.getElementsByClassName('messages')[0], function(added_elements) {
+        let timestamp = (new Date()).toLocaleTimeString();
+        let message =  added_elements[0];
+
+        // differentiate between messages and actions
+        if(message.querySelectorAll('.speaker')) {
+            let speaker_element = message.getElementsByClassName('speaker')[0];
+            speaker_element.innerText += ' • ' + timestamp;
+        }
+    });
 }
