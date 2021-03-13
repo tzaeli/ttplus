@@ -64,8 +64,8 @@ function init_ttplus() {
     // add theme toggle to toolbar
     let dark_mode_toggle = document.createElement('div');
     dark_mode_toggle.appendChild(document.createTextNode("Theme"));
-    dark_mode_toggle.class = "ttplus theme-toggle";
-    dark_mode_toggle.style = "color:#ffffff";
+    dark_mode_toggle.className = 'ttplus-toggle ttplus-theme';
+    dark_mode_toggle.style = 'color:#ffffff';
     dark_mode_toggle.onclick = function() {
         toggle_dark_mode();
     };
@@ -74,13 +74,17 @@ function init_ttplus() {
 
     // start message listener
     onAppend(document.getElementsByClassName('messages')[0], function(added_elements) {
-        let timestamp = (new Date()).toLocaleTimeString();
         let message =  added_elements[0];
+
+        // create timestamp
+        let timestamp = document.createElement('span');
+        timestamp.className = 'ttplus-timestamp'
+        timestamp.innerText = ' • ' + (new Date()).toLocaleTimeString();
 
         // differentiate between messages and actions
         if(message.querySelectorAll('.speaker')) {
             let speaker_element = message.getElementsByClassName('speaker')[0];
-            speaker_element.innerText += ' • ' + timestamp;
+            speaker_element.appendChild(timestamp);
         }
     });
 }
