@@ -13,7 +13,9 @@ function add_dark_css() {
     link.id = 'darkcss'
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://raw.githack.com/Madtanker/DarkMode-for-TTFM/main/Darkmode.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/darkmode.min.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/coolmode.min.css'
+    
 
     head.appendChild(link);
 
