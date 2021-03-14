@@ -1,0 +1,335 @@
+/* ==UserStyle==
+@name           C O O L M O D E
+@namespace      https://turntable.fm/
+@version        1.0.0
+@description    a simple less eye burning colour change for turntable.fm
+@author         MadTanker
+==/UserStyle== */
+/* || TTPlus */
+.message .speaker .ttplus-timestamp {
+	color: #B9BFFF !important;
+	font-size: 11px !important;
+	font-weight: normal !important;
+	float: right !important;
+}
+/* || private chat*/
+.header-bar .header-room {
+	color: #B9BFFF !important;
+	text-shadow: none !important;
+}
+.tab-item:active,
+.tab-item.selected {
+	background: #B9BFFF !important;
+	background-image: linear-gradient(to bottom left, #7953A9, #4066E0) !important;
+	color: #B9BFFF !important;
+}
+#buddyList {
+	background: #404040 !important;
+}
+#buddyListTitle {
+	color: #B9BFFF !important;
+	border-bottom: #7953A9 !important;
+}
+#buddyListHeader {
+	border-top: none !important;
+	border-bottom: none !important;
+	background-color: #7953A9 !important;
+	background-image: linear-gradient(to bottom left, #7953A9, #4066E0) !important;
+}
+.avatar-head {
+	background-color: #666 !important;
+}
+.conversations-list > ul > * {
+	border-bottom: none !important;
+}
+.striped-list > :nth-child(odd):not(.separator),
+.conversations-list > ul > :nth-child(odd):not(.separator),
+.message-history > :nth-child(odd):not(.separator),
+.guest-list > :nth-child(odd):not(.separator) {
+	background: #282828 !important;
+}
+.striped-list > :nth-child(even):not(.separator),
+.conversations-list > ul > :nth-child(even):not(.separator),
+.message-history > :nth-child(even):not(.separator),
+.guest-list > :nth-child(even):not(.separator) {
+	background: #404040 !important;
+}
+.conversation-item .conversation-info .conversation-username {
+	color: #7953A9 !important;
+}
+.message-view {
+	color: #4066E0 !important;
+}
+.message-view .message-username {
+	color: #7953A9 !important;
+}
+.conversation-item .conversation-info .conversation-user-room .conversation-user-room-link {
+	color: white !important;
+}
+.conversation-item .conversation-info .conversation-user-room {
+	color: white !important;
+}
+.striped-list > :nth-child(odd):not(.separator):not(.no-hover):hover,
+.conversations-list > ul > :nth-child(odd):not(.separator):not(.no-hover):hover,
+.message-history > :nth-child(odd):not(.separator):not(.no-hover):hover,
+.guest-list > :nth-child(odd):not(.separator):not(.no-hover):hover {
+	background: #404040 !important;
+}
+.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover,
+.conversations-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover,
+.message-history > :nth-child(even):not(.separator):not(.no-hover):hover,
+.guest-list > :nth-child(even):not(.separator):not(.no-hover):hover {
+	background: #282828 !important;
+}
+.striped-list > *,
+.conversations-list > ul > *,
+.message-history > *,
+.guest-list > * {
+	border-bottom: none !important;
+}
+.message-input-view {
+	background-image: linear-gradient(to bottom, #666, #404040, #666) !important;
+	background-color: #404040 !important;
+	box-shadow: none !important;
+}
+.conversation-view .error-message {
+	background: #404040 !important;
+	color: white !important;
+	border-top: 1px solid #666 !important;
+}
+
+/*queue tab*/
+.floating-panel-header {
+	background-image: linear-gradient(to bottom, #666, #404040, #666) !important;
+	border-top: none !important;
+	border-bottom: solid 1px #666 !important;
+	text-shadow: none !important;
+}
+.panel-button {
+	background-image: linear-gradient(to top, #404040, #282828) !important;
+	color: white !important;
+	font-weight: normal !important;
+	box-shadow: 1px 1px 1px black !important;
+	border: none !important;
+}
+.panel-button:hover:not(.disabled) {
+	background: #0081b4 !important;
+}
+#queue-header {
+	background: linear-gradient(to bottom, #666, #404040, #666) !important;
+	border-top: 1px #666 !important;
+}
+.floating-menu .option {
+	color: #4066E0 !important;
+	background: #404040 !important;
+	box-shadow: none !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-bottom: 0 !important;
+	border-top: solid 3px #666 !important;
+}
+.options {
+	border-top: 0 !important
+}
+.floating-menu .option.active {
+	background: #7953A9 !important;
+}
+.floating-menu .option.special:not(.disabled):hover {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.floating-menu .option:not(.split-option):not(.disabled):hover {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.filter .btn {
+	text-shadow: none !important;
+}
+
+#songs {
+	background-color: #404040 !important;
+}
+.song-list {
+	background: #404040 !important;
+}
+.song-list ul.songs {
+	background: #404040 !important;
+}
+.song .progress {
+	background-color: #7953A9 !important;
+}
+/*Room tab*/
+.sliding-nav .sliding-nav-pane-content {
+	background-color: #404040 !important;
+}
+.tabbed-panel a,
+.tabbed-panel a:visited {
+	color: #7953A9 !important;
+}
+.room-tab .room-info-intro {
+	color: #B9BFFF !important;
+	border-bottom: 0 !important;
+}
+.room-tab .room-info-wrap {
+	background: #404040 !important;
+	border-bottom: 0 !important;
+}
+.room-tab .room-name,
+.room-tab .num-listeners,
+.room-tab .description-wrap {
+	color: #B9BFFF !important;
+}
+.flat-button {
+	background-color: #404040 !important;
+	background-image: linear-gradient(to bottom, #484848, #303030) !important;
+	border: none !important;
+	color: #B9BFFF !important;
+	box-shadow: 1px 1px 1px black !important;
+}
+.flat-button:hover {
+	background: none !important;
+	border: none !important;
+}
+.room-tab .room-info-link h3 {
+	color: #B9BFFF !important;
+}
+/*recently played*/
+.striped-list > :nth-child(odd):not(.separator),
+.song-list > ul > :nth-child(odd):not(.separator) {
+	background: #282828 !important;
+	border: 0 !important;
+}
+.striped-list > :nth-child(even):not(.separator),
+.song-list > ul > :nth-child(even):not(.separator) {
+	background: #404040 !important;
+	border: 0 !important;
+}
+.striped-list > :nth-child(odd):not(.separator):not(.no-hover):hover,
+.song-list > ul > :nth-child(odd):not(.separator):not(.no-hover):hover {
+	background: #404040 !important;
+}
+.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover,
+.song-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover {
+	background: #282828 !important;
+}
+.song .title,
+.song .details {
+	color: #B9BFFF !important;
+}
+/*trending songs*/
+.default-message {
+	color: #4066E0 !important;
+	text-shadow: none !important;
+}
+/*people here*/
+.striped-list,
+.conversations-list > ul,
+.message-history,
+.guest-list {
+	background: #404040 !important;
+}
+.guest-list > :nth-child(even):not(.separator) {
+	background: #282828 !important;
+}
+.guest-list > :nth-child(odd):not(.separator) {
+	background: #404040 !important;
+}
+.guest-list .guest-name,
+.guest-count {
+	color: #7953A9 !important;
+}
+.guest-list > :nth-child(even):not(.separator):not(.no-hover):hover,
+.guest-list > :nth-child(odd):not(.separator):not(.no-hover):hover {
+	background: #0081b4 !important;
+}
+.tabbed-panel .separator {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	background-color: #404040 !important;
+	background-image: linear-gradient(to bottom, #484848, #303030) !important;
+	text-shadow: 3px 1px #000 !important;
+	color: #4066E0 !important;
+}
+.sliding-nav .sliding-nav-pane-header {
+	background-color: #484848 !important;
+	background-image: linear-gradient(to bottom, #484848, #303030) !important;
+	box-shadow: none !important;
+}
+.sliding-nav .sliding-nav-pane-title {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	text-shadow: 3px 1px #000 !important;
+	color: #4066E0 !important;
+}
+/*chat tab*/
+.messages {
+	background-color: #404040 !important;
+}
+.message .speaker {
+	color: #7953A9 !important;
+}
+.chat .messages {
+	color: #B9BFFF !important;
+}
+.chat .message:nth-child(odd) {
+	background-color: #282828 !important;
+}
+.chat .message {
+	background-color: #141414 !important;
+	border-bottom: 0 !important;
+}
+.chat .message.mention {
+	color: #B9BFFF !important;
+	font-weight: normal !important;
+	background: none !important;
+	box-shadow: inset .1px .1px 5px #B9BFFF !important;
+}
+.chat .message.action {
+	color: #B9BFFF !important;
+	background-image: linear-gradient(to top right, #303030, #7953a9 200%) !important;
+}
+.message .subject {
+	color: #7953A9 !important;
+}
+.floating-panel-bar {
+	background: linear-gradient(to bottom, #666, #404040) !important;
+	border-top: 1px #666 !important;
+	border-bottom: 1px #666 !important;
+	box-shadow: none !important;
+}
+.message-input,
+#song-search-input {
+	color: #B9BFFF !important;
+	box-shadow: inset 0 0 0 1px #484848 !important;
+	background: #282828 !important;
+	border: none !important;
+}
+.chatsound-container {
+	background-color: #282828 !important;
+	background-image: linear-gradient(to top, #404040, #282828) !important;
+	box-shadow: 1px 1px 1px black !important;
+}
+.chatsound-container:hover {
+	background: none !important;
+}
+.chat-bar .chatsound {
+	border: none !important;
+}
+.horizontal-toggle-option.selected,
+.settings-dropdown .dropdown .split-option.option .option.selected,
+.graphics-modal .toggle .option.selected,
+.floating-menu .split-option.option .option.selected,
+#ding-menu .split-option.option .option.selected {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.floating-panel-header .divider,
+.floating-panel-bar .divider {
+	box-shadow: inset 1px 0 0 0 #666, inset -1px 0 0 0 #282828;
+}
+#ding-menu .option:not(.split-option):not(.disabled):hover {
+	background: #0097d3 !important;
+}
+.speech-bubble {
+	color: #B9BFFF !important;
+	background: #484848 !important;
+	box-shadow: none !important;
+	border: solid 3px #666 !important;
+}
