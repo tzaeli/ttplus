@@ -84,7 +84,7 @@ function init_ttplus() {
         timestamp.innerText = ' • ' + (new Date()).toLocaleTimeString();
 
         // differentiate between messages and actions
-        if(message.querySelectorAll('.speaker')) {
+        if(message.querySelectorAll('.speaker').length != 0) {
             let speaker_element = message.getElementsByClassName('speaker')[0];
             speaker_element.appendChild(timestamp);
         }
