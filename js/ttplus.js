@@ -10,11 +10,12 @@ function add_dark_css() {
     let head = document.getElementsByTagName('head')[0];
     let link = document.createElement('link');
 
-    link.id = 'darkcss'
+    link.id = 'coolcss'
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/darkmode.min.css';
-    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/coolmode.min.css'
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/'
+    /*link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/darkmode.min.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/coolmode.min.css'; */
     
 
     head.appendChild(link);
@@ -23,7 +24,7 @@ function add_dark_css() {
 }
 
 function remove_dark_css() {
-    document.getElementById('darkcss').remove();
+    document.getElementById('coolcss').remove();
 
     window.dark_active = false;
 }
