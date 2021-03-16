@@ -2400,8 +2400,8 @@ body {
     height: 36px;
     color: #B9BFFF;
     font-size: 13px;
-    font-weight: bold;
-    text-shadow: none;
+    font-weight: normal;
+    text-shadow: 1px 1px black;
     text-align: center;
     border-top: solid 1px #B9BFFF;
     border-bottom: none;
@@ -2420,10 +2420,10 @@ body {
 }
 
 .floating-panel-bar {
-    border-top: solid 1px #FFF;
+    border-top: solid 1px #B9BFFF;
     -webkit-box-shadow: 0 -1px 0 0 #AAA;
     -moz-box-shadow: 0 -1px 0 0 #AAA;
-    box-shadow: 0 -1px 0 0 #AAA
+    box-shadow: none;
 }
 
 .floating-panel-header .title {
@@ -2468,10 +2468,10 @@ body {
 
 .default-message,
 .queue-message {
-    color: #888;
+    color: #B9BFFF;
     font-size: 13px;
     font-style: italic;
-    text-shadow: 0 1px 0 white;
+    text-shadow: none;
     text-align: center
 }
 
@@ -2589,7 +2589,8 @@ body {
 }
 
 .chat .message.action {
-    color: #c00000
+    color: #B9BFFF;
+    background-image: linear-gradient(to top right, #2988a930, #b9bfff30);
 }
 
 .chat .message.mention {
@@ -2659,14 +2660,15 @@ body {
 }
 
 .contextual-popup-selected {
-    background: #0081b4;
-    color: #fff
+    background: #2988A9;
+    color: #B9BFFF
 }
 
 .contextual-popup .nib {
-    background: #fff;
+    background: #343233;
     border-radius: 5px 5px 0 0;
-    border: 1px solid #777;
+    color: #B9BFFF;
+    border: 1px solid #B9BFFF;
     border-bottom-width: 0;
     cursor: pointer
 }
@@ -2682,8 +2684,8 @@ body {
 }
 
 .contextual-popup .options {
-    background: #fff;
-    border: solid 1px #777;
+    background: #343233;
+    border: solid 1px #B9BFFF;
     -webkit-box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);
     -moz-box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);
     box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);
@@ -2728,7 +2730,8 @@ body {
 .guestOptionsContainer .guestOption.option,
 .typeahead .suggestion {
     position: relative;
-    color: #444;
+    color: #B9BFFF;
+    text-shadow: 1px 1px black;
     text-decoration: none;
     display: block;
     cursor: pointer;
@@ -2750,8 +2753,8 @@ body {
 
 .guestOptionsContainer .guestOption.option:hover,
 .typeahead .suggestion:hover {
-    background: #0081b4;
-    color: #fff
+    background: #2988A9;
+    color: #B9BFFF;
 }
 
 .guestOptionsContainer .guestOption.option:hover.checked:after,
@@ -2814,17 +2817,17 @@ div.chat-bar {
 .tabbed-panel .separator {
     height: 20px;
     line-height: 20px;
-    color: #666;
+    color: #B9BFFF;
     font-weight: bold;
-    text-shadow: 0 1px 0 #FFF;
-    border-top: solid 1px #FFF;
-    border-bottom: solid 1px #999;
-    background-color: #e0e0e0;
+    text-shadow: 1px 1px black;
+    border-top: none;
+    border-bottom: none;
+    background-color: #7953A9;
     background-image: -moz-linear-gradient(top, #eee, #ccc);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
     background-image: -webkit-linear-gradient(top, #eee, #ccc);
     background-image: -o-linear-gradient(top, #eee, #ccc);
-    background-image: linear-gradient(to bottom, #eee, #ccc);
+    background-image: linear-gradient(to bottom left, #7953A9, #2988A9);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffcccccc', GradientType=0)
 }
@@ -5953,7 +5956,7 @@ p {
     height: 16px;
     -webkit-box-shadow: inset 0 0 0 1px #979797;
     -moz-box-shadow: inset 0 0 0 1px #979797;
-    box-shadow: inset 0 0 0 1px #979797
+    box-shadow: inset 0 0 0 1px #B9BFFF;
 }
 
 #playlist .playlist-move-bottom {
@@ -6271,7 +6274,7 @@ p {
 
 .song-list {
     width: 100%;
-    background: #eee;
+    background: #343233;
     -webkit-user-select: none;
     -ms-user-select: none
 }
@@ -6788,8 +6791,8 @@ p {
 }
 
 .panel-button.disabled {
-    background: #dedede;
-    color: #acacac;
+    background: #343233;
+    color: #B9BFFF;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
     cursor: default
 }
@@ -6810,7 +6813,7 @@ p {
     background: -webkit-linear-gradient(top, #e3e3e3 0, #b2b2b2 100%);
     background: -o-linear-gradient(top, #e3e3e3 0, #b2b2b2 100%);
     background: -ms-linear-gradient(top, #e3e3e3 0, #b2b2b2 100%);
-    background: linear-gradient(to bottom, #e3e3e3 0, #b2b2b2 100%);
+    background: linear-gradient(to bottom, #2988A9 0, #2988A9 100%);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
@@ -7141,7 +7144,8 @@ div.pmContainer {
 }
 
 .pmGreyTop {
-    border-top: 1px solid #696969;
+    border-top: none;
+    border-bottom: solid 1px #B9BFFF;
     background: #7953A9;
     border-radius: 5px 5px 0 0;
     background-color: #434343;
@@ -12711,18 +12715,18 @@ button.tt-button.primary.small.disabled:hover {
     box-sizing: border-box;
     padding: 5px 5px 0;
     margin-left: -100px;
-    background: #333;
+    background: #666;
     text-align: left;
     display: none
 }
 
 .settings-dropdown .dropdown .option {
     display: block;
-    background: #f7f7f7;
+    background: #343233;
     -webkit-box-shadow: inset 0 0 0 1px #444;
     -moz-box-shadow: inset 0 0 0 1px #444;
-    box-shadow: inset 0 0 0 1px #444;
-    color: #555;
+    box-shadow: inset 0 0 0 1px #B9BFFF;
+    color: #B9BFFF;
     font-size: 12px;
     padding: .6em;
     margin-bottom: -1px;
@@ -12731,15 +12735,15 @@ button.tt-button.primary.small.disabled:hover {
 }
 
 .settings-dropdown .dropdown .option:not(.split-option):not(.disabled):hover {
-    background-color: #0097d3;
+    background-color: #2988A9;
     background-image: -moz-linear-gradient(top, #00a6e7, #0081b4);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00a6e7), to(#0081b4));
     background-image: -webkit-linear-gradient(top, #00a6e7, #0081b4);
     background-image: -o-linear-gradient(top, #00a6e7, #0081b4);
-    background-image: linear-gradient(to bottom, #00a6e7, #0081b4);
+    background-image: linear-gradient(to bottom, #2988A9, #2988A9);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00a6e7', endColorstr='#ff0081b4', GradientType=0);
-    color: #FFF
+    color: #B9BFFF;
 }
 
 .settings-dropdown .dropdown .option.active {
@@ -12843,14 +12847,6 @@ button.tt-button.primary.small.disabled:hover {
     border-bottom-color: #050505
 }
 
-.settings-dropdown .dropdown .option {
-    padding: .9em;
-    margin-bottom: 0;
-    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
-    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
-    box-shadow: inset 0 1px 0 0 #c4c4c4
-}
-
 .settings-dropdown .dropdown .option:first-child {
     -webkit-border-radius: 2px 2px 0 0;
     -moz-border-radius: 2px 2px 0 0;
@@ -12877,12 +12873,12 @@ button.tt-button.primary.small.disabled:hover {
     display: block;
     padding: .9em;
     text-decoration: none;
-    color: #555
+    color: #B9BFFF
 }
 
 .settings-dropdown .dropdown .option.link a:hover,
 .settings-dropdown .dropdown .option.link a:active {
-    color: #FFF
+    color: #B9BFFF
 }
 
 .settings-dropdown .dropdown .split-option.option .option {
@@ -12897,7 +12893,7 @@ button.tt-button.primary.small.disabled:hover {
 
 .settings-dropdown .logout {
     line-height: 38px;
-    color: #fff;
+    color: #B9BFFF;
     cursor: pointer;
     list-style: none
 }
@@ -12913,9 +12909,22 @@ button.tt-button.primary.small.disabled:hover {
 
 .settings-dropdown .volume-slider {
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: 35px;
     right: 10px
+}
+
+.dropdown-volume-container {
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #b9bfff;
+    background: #343233;
+}
+
+.settings-dropdown .dropdown ul {
+    margin-top: 3px;
+    box-shadow: inset 0 0 0 1px #b9bfff;
+    border: solid 1px #B9BFFF;
+    border-radius: 5px;
 }
 
 #transition-modal {
@@ -15007,17 +15016,22 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
     background-image: linear-gradient(to bottom, #2988A9, #2988A9);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00a6e7', endColorstr='#ff0081b4', GradientType=0);
-    color: #FFF
+    color: #B9BFFF;
 }
 
 .floating-menu .option.active {
     background: #2988A9;
-    color: #FFF
+    color: #B9BFFF;
 }
 
 .floating-menu .option.special {
-    background: #2a2a2a;
+    background: #343233;
     color: #B9BFFF
+}
+
+.floating-menu .option.special:not(.disabled) strong {
+    color: #7953A9;
+    text-shadow: 1px 1px #343233;
 }
 
 .floating-menu .option.special:not(.disabled):hover {
@@ -15026,7 +15040,7 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00a6e7), to(#0081b4));
     background-image: -webkit-linear-gradient(top, #00a6e7, #0081b4);
     background-image: -o-linear-gradient(top, #00a6e7, #0081b4);
-    background-image: linear-gradient(to bottom, #00a6e7, #0081b4);
+    background-image: linear-gradient(to bottom, #2988A9, #2988A9);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00a6e7', endColorstr='#ff0081b4', GradientType=0);
     color: #B9BFFF
@@ -15251,7 +15265,7 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
     -moz-border-radius: 7px;
     border-radius: 7px;
     padding: 4px 3px;
-    background: #343233;
+    background: #666;
     z-index: 1010;
     border: solid 1px #000;
     -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), 0 3px 20px #000;
@@ -15269,7 +15283,7 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
     background: #343233;
     -webkit-box-shadow: inset 0 0 0 1px #444;
     -moz-box-shadow: inset 0 0 0 1px #444;
-    box-shadow: inset 0 0 0 1px #444;
+    box-shadow: inset 0 0 0 1px #B9BFFF;
     color: #B9BFFF;
     font-size: 12px;
     padding: .6em;
@@ -15745,7 +15759,7 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
 .options-menu .nib {
     background: #fff;
     border-radius: 5px 5px 0 0;
-    border: 1px solid #777;
+    border: 1px solid #B9BFFF;
     border-bottom-width: 0;
     cursor: pointer
 }
@@ -15762,7 +15776,7 @@ div.ignoreModal.modal ul#ignoredUsers a.remove:hover {
 
 .options-menu .options {
     background: #343233;
-    border: solid 1px #777;
+    border: solid 1px #B9BFFF;
     -webkit-box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);
     -moz-box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);
     box-shadow: 0 1px 0 0 rgba(204, 204, 204, 0.5);

@@ -1892,7 +1892,7 @@
     left: 0;
     height: 38px;
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #343233;
     background-image: -moz-linear-gradient(top, #eee, #ccc);
     background-image: -webkit-gradient(linear,
             0 0,
@@ -1901,20 +1901,20 @@
             to(#ccc));
     background-image: -webkit-linear-gradient(top, #eee, #ccc);
     background-image: -o-linear-gradient(top, #eee, #ccc);
-    background-image: linear-gradient(to bottom, #eee, #ccc);
+    background-image: linear-gradient(to bottom, #343233, #343233);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffcccccc', GradientType=0);
     -webkit-box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #999;
     -moz-box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #999;
-    box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #999;
+    box-shadow: none;
     z-index: 1;
 }
 
 .sliding-nav .sliding-nav-pane-title {
-    color: #666;
+    color: #B9BFFF;
     font-size: 13px;
     font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 1px 1px black;
     text-align: center;
     line-height: 38px;
 }
@@ -1926,6 +1926,8 @@
     left: 0;
     right: 0;
     overflow: auto;
+    border-top: solid 1px #B9BFFF;
+
 }
 
 .sliding-nav .sliding-nav-no-header .sliding-nav-pane-content {
@@ -2028,7 +2030,6 @@
 .conversation-item .conversation-info .conversation-username {
     font-weight: bold;
     color: #7953A9;
-    text-decoration: none;
 }
 
 .conversation-item .conversation-info .conversation-user-room {
@@ -2047,7 +2048,7 @@
 .conversation-info,
 .conversation-user-room,
 .conversation-user-room-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .conversation-item .conversation-user-status {
@@ -2185,6 +2186,7 @@
 }
 
 .message-input-view {
+    border-top: solid 1px #B9BFFF;
     background-color: #343233;
     background-image: -moz-linear-gradient(top, #eee, #ccc);
     background-image: -webkit-gradient(linear,
@@ -2262,7 +2264,7 @@
     color: #a13e36;
     font-size: 11px;
     text-align: center;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 0;
     overflow: hidden;
     height: 0;
     -webkit-transition: height 0.3s;
@@ -3263,7 +3265,7 @@
 
 .settings-dropdown .logout {
     line-height: 38px;
-    color: #fff;
+    color: #B9BFFF;
     cursor: pointer;
     list-style: none;
 }
@@ -3489,13 +3491,17 @@
     font-size: 12px;
     font-weight: bold;
     vertical-align: top;
+    color: #7953A9;
 }
 
 .guest-list .guest-count {
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
+    font-style: italic;
     margin-left: 14px;
+    color: #7953A9;
+
 }
 
 .guest-list .guest-avatar {
