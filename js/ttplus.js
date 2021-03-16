@@ -13,7 +13,8 @@ function add_dark_css() {
     link.id = 'coolcss'
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/'
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/gh-pages/css/room-view-cool.min.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/gh-pages/css/room-cool.min.css';
     /*link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/darkmode.min.css';
     link.href = 'https://cdn.jsdelivr.net/gh/tzaeli/ttplus/coolmode.min.css'; */
     
